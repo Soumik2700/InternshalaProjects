@@ -294,7 +294,7 @@
 
 
 .transparentFront {
-    background-color: rgba(70, 85, 102, 0.5);
+    background-color: rgba(70, 85, 102, 0.3);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
@@ -302,3 +302,5 @@
 .relative:hover .transparentFront {
     opacity: 1;
 }
+
+
