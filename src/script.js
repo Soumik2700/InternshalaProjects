@@ -47,13 +47,22 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
- function animateProgressBars() {
+function animateProgressBars() {
     const progressBars = document.querySelectorAll('.progress-bar');
+
     progressBars.forEach((bar) => {
-        const percent = bar.getAttribute('data-percent');
-        bar.style.width = percent;
+        const percent = parseInt(bar.getAttribute('data-percent'), 10);
+
+        // Reset the width before animation
+        bar.style.width = '0%';
+
+        setTimeout(() => {
+            bar.style.transition = 'width 2s ease-in-out'; // Smooth transition
+            bar.style.width = `${percent}%`; // Animate to the target width
+        }, 100); // Slight delay to allow reset to take effect
     });
 
+    // Circular progress bars logic remains the same
     const circles = document.querySelectorAll('.circle-progress');
     circles.forEach((circleProgress) => {
         const value = circleProgress.getAttribute('data-progress');
@@ -61,10 +70,23 @@ document.addEventListener('DOMContentLoaded', () => {
         const radius = circle.r.baseVal.value;
         const circumference = 2 * Math.PI * radius;
 
-        // Calculate the stroke offset
         const offset = circumference - (value / 100) * circumference;
         circle.style.strokeDasharray = `${circumference}`;
-        circle.style.strokeDashoffset = `${offset}`;
+        circle.style.strokeDashoffset = `${circumference}`;
+
+        setTimeout(() => {
+            circle.style.strokeDashoffset = offset;
+        }, 100);
+
+        let count = 0;
+        const interval = setInterval(() => {
+            if (count <= parseInt(value, 10)) {
+                circleProgress.querySelector('span').textContent = `${count}%`;
+                count++;
+            } else {
+                clearInterval(interval);
+            }
+        }, 20); // Adjust the speed here
     });
 }
 
@@ -87,3 +109,6 @@ function onScroll() {
 }
 
 window.addEventListener('scroll', onScroll);
+
+
+

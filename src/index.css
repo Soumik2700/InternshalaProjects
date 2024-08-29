@@ -256,6 +256,12 @@
     text-shadow: 2px 2px 5px gray;
 }
 
+@media (max-width:1024px){
+    .aboutMe{
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 .circle-bg {
     fill: none;
@@ -284,4 +290,15 @@
 .progress-bar {
     width: 0;
     transition: width 2s ease-in-out;
+}
+
+
+.transparentFront {
+    background-color: rgba(70, 85, 102, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.relative:hover .transparentFront {
+    opacity: 1;
 }
