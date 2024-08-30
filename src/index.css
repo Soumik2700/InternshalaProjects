@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -62,7 +63,6 @@ html {
 
 
 .character {
-    background-image: url('https://cdn2.iconfinder.com/data/icons/faceavatars/PNG/D04.png');
     background-size: 100px 70px;
     animation-name: jump;
     animation-duration: 5s;
@@ -162,21 +162,32 @@ html {
     transform: scale(0.95);
     /* Slightly shrinks the button when clicked */
 }
+
 /* header related end */
 
 
 
 /* navigation transition section start */
 
-/* Initial state: hidden and translated */
-#about,#projects,#skills,#contact {
+/* Initial state: hidden and translated down */
+#home,
+#about,
+#projects,
+#skills,
+#certifications,
+#contact {
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
 /* Active state: fully visible and in the original position */
-#about,#projects,#skills,#contact.active {
+#home.active,
+#about.active,
+#projects.active,
+#skills.active,
+#certifications.active,
+#contact.active {
     opacity: 1;
     transform: translateY(0);
 }
@@ -283,6 +294,12 @@ html {
     }
 }
 
+@media(max-width:768px) {
+    .typewriter {
+        font-size: 30px;
+    }
+}
+
 .iconHover:hover {
     transform: perspective(300px) translateZ(50px);
 }
@@ -351,32 +368,72 @@ html {
 
 
 
-.certificateTransition{
+.certificateTransition {
     position: relative;
     bottom: 0;
     left: 0;
     transition: all ease-in-out 0.1s;
 }
 
-.certificateTransition:hover{
+.certificateTransition:hover {
     bottom: 15px;
     left: 0;
     transform: perspective(4000px) translateZ(40px);
 }
 
-@media (max-width:1387px){
-    body{
+@media (max-width:1387px) {
+    body {
         display: flex;
         flex-direction: column;
         position: absolute;
     }
 }
 
-@media (max-width:1068px) {
-   nav{
+.homeAnimationOne {
     display: none;
-   }
 }
+
+@media (max-width:768px) {
+    .homeSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .widthOne {
+        height: 50%;
+        width: 100%;
+    }
+
+    .widthTwo {
+        height: 50%;
+        width: 100%;
+    }
+
+    .homeAnimation {
+        display: none;
+    }
+
+    .homeAnimationOne {
+        display: inherit;
+        text-align: center;
+    }
+}
+
+
+@media (max-width:1068px) {
+    nav {
+        display: none;
+    }
+}
+
+@media(max-width:646px) {
+    .projectCards {
+        margin-right: 60px;
+    }
+}
+
 /* @media (max-width:1650px) {
    .homeSection{
     display: flex;
