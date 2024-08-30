@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="dark" lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,12 @@
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-slate-100 transition-colors duration-500">
     <!-- Welcome Page -->
     <div id="welcome-page" class="fixed inset-0 bg-white dark:bg-gray-900 flex items-center justify-center z-50">
-        <h1 class="text-4xl md:text-6xl font-bold text-gray-800 dark:text-gray-100 typewriter">Journey of a Tech Enthusiast</h1>
+        <h1 class="text-4xl md:text-6xl font-bold text-gray-800 dark:text-gray-100 typewriter">Journey of a Tech
+            Enthusiast</h1>
     </div>
     <div id="main-content" class="">
         <header class="bg-white dark:bg-gray-800 shadow-md">
@@ -25,13 +28,13 @@
                     <!-- Navigation Links (Hidden on mobile) -->
                     <nav class="hidden md:flex space-x-10">
                         <a href="#about"
-                            class="text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white font-bold">About</a>
+                            class="text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white font-bold header-button">About</a>
                         <a href="#projects"
-                            class="text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white font-bold">Projects</a>
+                            class="text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white font-bold header-button">Projects</a>
                         <a href="#skills"
-                            class="text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white font-bold">Skills</a>
+                            class="text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white font-bold header-button">Skills</a>
                         <a href="#contact"
-                            class="text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white font-bold">Contact</a>
+                            class="text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white font-bold header-button">Contact</a>
                     </nav>
         
                     <!-- Mobile Menu & Dark Mode Toggle -->
@@ -39,121 +42,144 @@
                         <!-- Mobile Menu Button -->
                         <div class="-mr-2 flex md:hidden">
                             <button type="button"
-                                class="bg-gray-100 dark:bg-gray-700 p-2 rounded-md inline-flex items-center justify-center text-gray-400 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-600 focus:outline-none">
+                                class="bg-gray-100 dark:bg-gray-700 p-2 rounded-md inline-flex items-center justify-center text-gray-400 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-600 focus:outline-none header-button">
                                 <span class="sr-only">Open menu</span>
                                 <!-- Heroicon name: menu -->
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                                    class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
                                 </svg>
-
                             </button>
                         </div>
         
                         <!-- Dark Mode Toggle Button -->
                         <button id="theme-toggle"
-                            class="ml-4 bg-gray-200 dark:bg-gray-700 p-2 rounded-md text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none">
+                            class="ml-4 bg-gray-200 dark:bg-gray-700 p-2 rounded-md text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none header-button">
                             <span id="theme-toggle-text">Dark Mode</span>
                         </button>
                     </div>
                 </div>
             </div>
-        
-            <!-- Mobile Menu (Hidden by default) -->
-            <div class="md:hidden sm:flex">
-                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                    <a href="#about"
-                        class="block text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">About</a>
-                    <a href="#projects"
-                        class="block text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">Projects</a>
-                    <a href="#skills"
-                        class="block text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">Skills</a>
-                    <a href="#contact"
-                        class="block text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">Contact</a>
-                </div>
-            </div>
         </header>
+
     </div>
 
     <div class="flex flex-col justify-center items-center">
         <section class="container rounded-md shadow shadow-slate-400 mt-8 md:flex-col">
             <div class="flex gap-10 m-11">
                 <div class="flex flex-col widthOne">
-                        <div>
-                            <img class="rounded character"
-                                src="https://static.vecteezy.com/system/resources/thumbnails/037/495/402/small_2x/ai-generated-executive-arrival-confident-indian-business-professional-with-tablet-photo.jpg"
-                                alt="">
-                        </div>
-                        <div class="flex justify-center gap-10 mt-3">
-                            <img class="h-20 w-20 iconHover" src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000" alt="">
-                            <img class="h-20 w-20 iconHover" src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000" alt="">
-                            <img class="h-20 w-20 iconHover" src="https://img.icons8.com/?size=100&id=32323&format=png&color=000000" alt="">
-                            <img class="h-20 w-20 iconHover" src="https://img.icons8.com/?size=100&id=13963&format=png&color=000000" alt="">
+                    <div>
+                        <img class="rounded character"
+                            src="https://static.vecteezy.com/system/resources/thumbnails/037/495/402/small_2x/ai-generated-executive-arrival-confident-indian-business-professional-with-tablet-photo.jpg"
+                            alt="">
+                    </div>
+                    <div class="flex justify-center gap-10 mt-3">
+                        <img class="h-20 w-20 iconHover"
+                            src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000" alt="">
+                        <img class="h-20 w-20 iconHover"
+                            src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000" alt="">
+                        <img class="h-20 w-20 iconHover"
+                            src="https://img.icons8.com/?size=100&id=32323&format=png&color=000000" alt="">
+                        <img class="h-20 w-20 iconHover"
+                            src="https://img.icons8.com/?size=100&id=13963&format=png&color=000000" alt="">
 
-                            
-                        </div>
+
+                    </div>
                 </div>
                 <div class="flex flex-col widthTwo">
                     <div class="flex justify-center">
-                        <div class="text-5xl homeAnimation dark:bg-gray-900 " style="font-family: Coiny,cursive;">Hello! </div>&nbsp;&nbsp;&nbsp;
+                        <div class="text-5xl homeAnimation dark:bg-gray-900 " style="font-family: Coiny,cursive;">Hello!
+                        </div>&nbsp;&nbsp;&nbsp;
                         <div>
-                            <span class="text-5xl homeAnimation dark:bg-gray-900" style="font-family: Coiny,cursive;">I'm Soumik Sinha</span>
+                            <span class="text-5xl homeAnimation dark:bg-gray-900"
+                                style="font-family: Coiny,cursive;">I'm Soumik Sinha</span>
                         </div>
                     </div>
-                    <p class="text-justify font-bold mt-12 text-slate-400">A passionate student of Computer Science and Engineering (CSE) with a deep interest in technology and innovation.
-                    Currently, I am honing my skills as a trainee at Internshala, where I am gaining practical experience and expanding my
-                    knowledge in various domains of technology. <br><br>
-                    
-                    My journey in the tech world began with a curiosity about how things work behind the scenes. This curiosity quickly
-                    evolved into a passion for programming, data structures, algorithms, and software development. Through my academic
-                    journey, I’ve had the opportunity to dive into various aspects of computer science, from understanding the fundamentals
-                    of networking and microprocessors to exploring the intricacies of data analysis and web development</p>
+                    <p class="text-justify font-bold mt-12 text-slate-400">A passionate student of Computer Science and
+                        Engineering (CSE) with a deep interest in technology and innovation.
+                        Currently, I am honing my skills as a trainee at Internshala, where I am gaining practical
+                        experience and expanding my
+                        knowledge in various domains of technology. <br><br>
+
+                        My journey in the tech world began with a curiosity about how things work behind the scenes.
+                        This curiosity quickly
+                        evolved into a passion for programming, data structures, algorithms, and software development.
+                        Through my academic
+                        journey, I’ve had the opportunity to dive into various aspects of computer science, from
+                        understanding the fundamentals
+                        of networking and microprocessors to exploring the intricacies of data analysis and web
+                        development</p>
                     <div class=" flex justify-center items-center mt-20">
-                        <button class="rounded-lg w-32 px-4 py-2 bg-green-500 text-blue-100 hover:bg-blue-600 duration-300">Message</button>
+                        <button
+                            class="rounded-lg w-32 px-4 py-2 bg-green-500 text-blue-100 hover:bg-blue-600 duration-300">Message</button>
                     </div>
                 </div>
             </div>
-        
+
         </section>
-        <section class="flex flex-col items-center container rounded-md shadow shadow-slate-400 mt-8 transition-all ease-in-out duration-500" id="about">
+        <section
+            class="flex flex-col items-center container rounded-md shadow shadow-slate-400 mt-8 transition-all ease-in-out duration-500"
+            id="about">
             <div class="one block">
                 <h1>About Me</h1>
             </div>
             <div class="flex flex-row aboutMe justify-between gap-6">
-                <img class="w-96 rounded-md" src="https://img.freepik.com/free-photo/smiling-young-male-professional-standing-with-arms-crossed-while-making-eye-contact-against-isolated-background_662251-838.jpg" alt="My image 1">
-                <img class="w-96 rounded-md" src="https://www.shutterstock.com/image-photo/portrait-handsome-confident-arabian-indian-260nw-2186397151.jpg" alt="My image 2">
+                <img class="w-96 rounded-md"
+                    src="https://img.freepik.com/free-photo/smiling-young-male-professional-standing-with-arms-crossed-while-making-eye-contact-against-isolated-background_662251-838.jpg"
+                    alt="My image 1">
+                <img class="w-96 rounded-md"
+                    src="https://www.shutterstock.com/image-photo/portrait-handsome-confident-arabian-indian-260nw-2186397151.jpg"
+                    alt="My image 2">
             </div>
             <div id="about-me" class="text-gray-800 dark:text-gray-100 text-justify m-11">
                 <p>
-                    Hello! My name is <strong>Soumik Sinha</strong>, and I am currently pursuing a Bachelor of Technology in Computer
-                    Science and Engineering (CSE). My journey in the tech world has been driven by a deep curiosity and passion for
+                    Hello! My name is <strong>Soumik Sinha</strong>, and I am currently pursuing a Bachelor of
+                    Technology in Computer
+                    Science and Engineering (CSE). My journey in the tech world has been driven by a deep curiosity and
+                    passion for
                     understanding how technology can be harnessed to solve real-world problems and improve lives.
                 </p>
                 <div id="more-text-wrapper" class="overflow-hidden transition-all duration-500 ease-in-out max-h-0">
                     <p id="more-text" class="pt-4">
-                        From a young age, I was fascinated by computers and how they worked. This fascination led me to explore the
-                        world of programming, where I discovered the joy of building things from scratch. Over the years, I have
-                        developed a strong foundation in various programming languages, data structures, algorithms, and software
-                        development principles. My academic background has provided me with the theoretical knowledge necessary to
-                        understand complex systems, while my hands-on projects have allowed me to apply this knowledge in practical
+                        From a young age, I was fascinated by computers and how they worked. This fascination led me to
+                        explore the
+                        world of programming, where I discovered the joy of building things from scratch. Over the
+                        years, I have
+                        developed a strong foundation in various programming languages, data structures, algorithms, and
+                        software
+                        development principles. My academic background has provided me with the theoretical knowledge
+                        necessary to
+                        understand complex systems, while my hands-on projects have allowed me to apply this knowledge
+                        in practical
                         settings.
-                
-                        I am currently gaining valuable experience as a trainee at Internshala, where I am learning how to bridge the
-                        gap between theoretical knowledge and real-world application. This experience has taught me the importance of
-                        teamwork, effective communication, and continuous learning. I am constantly seeking out new challenges that push
+
+                        I am currently gaining valuable experience as a trainee at Internshala, where I am learning how
+                        to bridge the
+                        gap between theoretical knowledge and real-world application. This experience has taught me the
+                        importance of
+                        teamwork, effective communication, and continuous learning. I am constantly seeking out new
+                        challenges that push
                         me to grow and expand my skill set.
-                
-                        In addition to my technical skills, I am passionate about staying up-to-date with the latest trends and
-                        advancements in technology. I believe that the future belongs to those who are willing to adapt and innovate,
+
+                        In addition to my technical skills, I am passionate about staying up-to-date with the latest
+                        trends and
+                        advancements in technology. I believe that the future belongs to those who are willing to adapt
+                        and innovate,
                         and I am committed to being a lifelong learner in this ever-evolving field.
-                
-                        When I’m not coding, you’ll find me exploring new technologies, reading about the latest developments in the
-                        tech industry, or working on personal projects that allow me to experiment with new ideas. I am particularly
-                        interested in areas like web development, data science, and artificial intelligence, and I am eager to
+
+                        When I’m not coding, you’ll find me exploring new technologies, reading about the latest
+                        developments in the
+                        tech industry, or working on personal projects that allow me to experiment with new ideas. I am
+                        particularly
+                        interested in areas like web development, data science, and artificial intelligence, and I am
+                        eager to
                         contribute to projects that have a meaningful impact on society.
-                
-                        Thank you for taking the time to learn a little about me. I look forward to connecting with like-minded
-                        individuals and collaborating on exciting projects. If you’d like to learn more about my work or discuss
+
+                        Thank you for taking the time to learn a little about me. I look forward to connecting with
+                        like-minded
+                        individuals and collaborating on exciting projects. If you’d like to learn more about my work or
+                        discuss
                         potential opportunities, please feel free to get in touch!
                     </p>
                 </div>
@@ -171,11 +197,11 @@
         <div class="dark:bg-slate-500 bg-slate-300 container m-8 rounded-md">
             <section id="skills" class="py-12 container block m-auto">
                 <h2 class="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-8 text-center">My Skills</h2>
-        
+
                 <!-- Linear Progress Bars -->
                 <div class="mb-12">
                     <h3 class="text-2xl font-semibold text-gray-700 dark:text-gray-200 mb-4">Technical Skills</h3>
-        
+
                     <!-- Example Skill 1 -->
                     <div class="mb-4">
                         <div class="flex justify-between mb-1">
@@ -186,7 +212,7 @@
                             <div class="bg-blue-600 h-4 rounded-full progress-bar" data-percent="85"></div>
                         </div>
                     </div>
-        
+
                     <!-- Example Skill 2 -->
                     <div class="mb-4">
                         <div class="flex justify-between mb-1">
@@ -197,7 +223,7 @@
                             <div class="bg-green-600 h-4 rounded-full progress-bar" data-percent="75"></div>
                         </div>
                     </div>
-        
+
                     <!-- Example Skill 3 -->
                     <div class="mb-4">
                         <div class="flex justify-between mb-1">
@@ -209,11 +235,11 @@
                         </div>
                     </div>
                 </div>
-        
+
                 <!-- Circular Progress Bars -->
                 <div>
                     <h3 class="text-2xl font-semibold text-gray-700 dark:text-gray-200 mb-4">Soft Skills</h3>
-        
+
                     <div class="flex justify-around">
                         <!-- Example Circular Skill 1 -->
                         <div class="relative text-center">
@@ -229,7 +255,7 @@
                             </div>
                             <span class="mt-2 block text-gray-700 dark:text-gray-200">Communication</span>
                         </div>
-        
+
                         <!-- Example Circular Skill 2 -->
                         <div class="relative text-center">
                             <div class="circle-progress" data-progress="70">
@@ -244,7 +270,7 @@
                             </div>
                             <span class="mt-2 block text-gray-700 dark:text-gray-200">Teamwork</span>
                         </div>
-        
+
                         <!-- Example Circular Skill 3 -->
                         <div class="relative text-center">
                             <div class="circle-progress" data-progress="85">
@@ -264,7 +290,7 @@
             </section>
         </div>
     </div>
-    
+
     <!-- certifications start -->
     <div class="container flex flex-col items-center justify-center m-auto mb-8 rounded-md">
         <div>
@@ -272,44 +298,56 @@
         </div>
         <section class="flex flex-row flex-wrap justify-center gap-6 m-6">
             <!-- Certification Card 1 -->
-            <div class="w-80 p-8 rounded-lg shadow-md bg-slate-300 dark:bg-slate-500 flex flex-col justify-evenly items-center">
+            <div
+                class="w-80 p-8 rounded-lg shadow-md bg-slate-300 dark:bg-slate-500 flex flex-col justify-evenly items-center">
                 <div>
-                    <h3 class="text-xl font-semibold text-gray-700 dark:text-gray-300 text-center">Full Stack Development: Let's
+                    <h3 class="text-xl font-semibold text-gray-700 dark:text-gray-300 text-center">Full Stack
+                        Development: Let's
                         Begin</h3>
                     <p class="text-gray-600 dark:text-gray-300 text-center"><strong>Issued by:</strong> Internshala</p>
                     <p class="text-gray-600 dark:text-gray-300 text-center"><strong>Date:</strong> July 2024</p>
-                    <p class="text-gray-600 dark:text-gray-300 text-center">Completed a basic introduction in HTML and CSS</p>
+                    <p class="text-gray-600 dark:text-gray-300 text-center">Completed a basic introduction in HTML and
+                        CSS</p>
                 </div>
-                <a href="https://drive.google.com/file/d/1HaqcT2Dmaj2m2Ma8zKDPlgcd16EJTO7p/view?usp=sharing" target="_blank"
+                <a href="https://drive.google.com/file/d/1HaqcT2Dmaj2m2Ma8zKDPlgcd16EJTO7p/view?usp=sharing"
+                    target="_blank"
                     class="mt-4 py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-700 duration-300 text-center">
                     View Certificate (PDF)
                 </a>
             </div>
-    
+
             <!-- Certification Card 2 -->
-            <div class="w-80 p-8 rounded-lg shadow-md bg-slate-300 dark:bg-slate-500 flex flex-col justify-evenly items-center">
+            <div
+                class="w-80 p-8 rounded-lg shadow-md bg-slate-300 dark:bg-slate-500 flex flex-col justify-evenly items-center">
                 <div>
                     <h3 class="text-xl font-semibold text-gray-700 dark:text-gray-300 text-center">Data Analytics</h3>
-                    <p class="text-gray-600 dark:text-gray-300 text-center"><strong>Issued by:</strong> Godrej Infotech</p>
+                    <p class="text-gray-600 dark:text-gray-300 text-center"><strong>Issued by:</strong> Godrej Infotech
+                    </p>
                     <p class="text-gray-600 dark:text-gray-300 text-center"><strong>Date:</strong> July 2024</p>
-                    <p class="text-gray-600 dark:text-gray-300 text-center">Completed the concepts of Power BI, MSSQL, Cloud
+                    <p class="text-gray-600 dark:text-gray-300 text-center">Completed the concepts of Power BI, MSSQL,
+                        Cloud
                         Computing</p>
                 </div>
-                <a href="https://drive.google.com/file/d/1e45vCuRgRO9vR9PXeBFjHO9hho88Eq6H/view?usp=sharing" target="_blank"
+                <a href="https://drive.google.com/file/d/1e45vCuRgRO9vR9PXeBFjHO9hho88Eq6H/view?usp=sharing"
+                    target="_blank"
                     class="mt-4 py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-700 duration-300 text-center">
                     View Certificate (PDF)
                 </a>
             </div>
-    
+
             <!-- Certification Card 3 -->
-            <div class="w-80 p-8 rounded-lg shadow-md bg-slate-300 dark:bg-slate-500 flex flex-col justify-evenly items-center">
+            <div
+                class="w-80 p-8 rounded-lg shadow-md bg-slate-300 dark:bg-slate-500 flex flex-col justify-evenly items-center">
                 <div>
                     <h3 class="text-xl font-semibold text-gray-700 dark:text-gray-300 text-center">ReactJS</h3>
-                    <p class="text-gray-600 dark:text-gray-300 text-center"><strong>Issued by:</strong> Celebal Technologies</p>
+                    <p class="text-gray-600 dark:text-gray-300 text-center"><strong>Issued by:</strong> Celebal
+                        Technologies</p>
                     <p class="text-gray-600 dark:text-gray-300 text-center"><strong>Date:</strong> July 2024</p>
-                    <p class="text-gray-600 dark:text-gray-300 text-center">Completed the Summer Internship Program in Celebel Technologies under ReactJS</p>
+                    <p class="text-gray-600 dark:text-gray-300 text-center">Completed the Summer Internship Program in
+                        Celebel Technologies under ReactJS</p>
                 </div>
-                <a href="https://drive.google.com/file/d/1VZtMRTI4WQfnZBTnhkEbsgIbreVvEAmp/view?usp=sharing" target="_blank"
+                <a href="https://drive.google.com/file/d/1VZtMRTI4WQfnZBTnhkEbsgIbreVvEAmp/view?usp=sharing"
+                    target="_blank"
                     class="mt-4 py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-700 duration-300 text-center">
                     View Certificate (PDF)
                 </a>
@@ -319,174 +357,266 @@
     <!-- certifications end -->
 
     <!-- projects start -->
-    <section class="bg-slate-300 dark:bg-gray-500 rounded-lg shadow shadow-md shadow-gray-600 dark:shadow-slate-400 block m-auto flex flex-col flex-wrap items-center justify-around gap-8 container border border-slate-100 mb-8 p-8">
-        <h1 class="text-3xl font-bold mb-2 text-gray-800 dark:text-white">Projects</h1>
-        <div class="flex flex-wrap justify-evenly gap-8">
-            <div class="flex flex-col items-center p-8 bg-slate-400 dark:bg-slate-600 gap-5 rounded-lg shadow-md shadow-gray-600 dark:shadow-slate-400">
-                <h2 class="text-4xl font-extrabold uppercase text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500 drop-shadow-md">Portfolio</h2>
-                <div class="relative w-auto h-64">
-                    <!-- Image -->
-                    <img class="w-full h-full rounded-md object-cover projectImages"
-                        src="https://codehalweb.com/wp-content/uploads/2023/05/thumbnail-12.jpg" alt="portfolio website">
-                    <!-- Transparent Overlay -->
-                    <div class="absolute inset-0 bg-slate-400/50 transparentFront flex justify-center items-center">
-                        <!-- SVG Button -->
-                        <a href="https://codehalweb.com/wp-content/uploads/2023/05/thumbnail-12.jpg" target="_blank">
-                            <svg class="opacity-0 fill-current text-white hover:opacity-100 transition-opacity duration-300" width="50"
-                                height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z" />
-                            </svg>
-                        </a>
-                    </div>
-                    
-                </div>
-                <p class="h-[256px] w-[455.33px] text-justify font-semibold">A portfolio website is an online platform showcasing a professional's or creative's work, skills, and achievements. It
-                    serves as a visual representation of their expertise, making it easy for potential employers, clients, or collaborators
-                    to assess their capabilities. A well-designed portfolio website can be a powerful tool for establishing credibility,
-                    generating leads, and setting oneself apart from others in the industry. With a portfolio website, professionals can
-                    display their projects, share their story, and demonstrate their value to a global audience.</p>
-            </div>
+        <section id="projects" class="bg-slate-300 dark:bg-gray-500 rounded-lg shadow shadow-md shadow-gray-600 dark:shadow-slate-400 block m-auto flex flex-col flex-wrap items-center justify-around gap-8 container border border-slate-100 mb-8 p-8">
+            <h1 class="text-3xl font-bold mb-2 text-gray-800 dark:text-white">Projects</h1>
+            <div class="flex flex-wrap justify-evenly gap-8">
+                <div
+                    class="flex flex-col items-center p-8 bg-slate-400 dark:bg-slate-600 gap-5 rounded-lg shadow-md shadow-gray-600 dark:shadow-slate-400">
+                    <h2
+                        class="text-4xl font-extrabold uppercase text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500 drop-shadow-md">
+                        Portfolio</h2>
+                    <div class="relative w-auto h-64">
+                        <!-- Image -->
+                        <img class="w-full h-full rounded-md object-cover projectImages"
+                            src="https://codehalweb.com/wp-content/uploads/2023/05/thumbnail-12.jpg"
+                            alt="portfolio website">
+                        <!-- Transparent Overlay -->
+                        <div class="absolute inset-0 bg-slate-400/50 transparentFront flex justify-center items-center">
+                            <!-- SVG Button -->
+                            <a href="https://codehalweb.com/wp-content/uploads/2023/05/thumbnail-12.jpg" target="_blank">
+                                <svg class="opacity-0 fill-current text-white hover:opacity-100 transition-opacity duration-300"
+                                    width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z" />
+                                </svg>
+                            </a>
+                        </div>
 
-            <div class="flex flex-col items-center p-8 bg-slate-400 dark:bg-slate-600 gap-5 rounded-lg shadow-md shadow-gray-600 dark:shadow-slate-400">
-                <h2
-                    class="text-4xl font-extrabold uppercase text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500 drop-shadow-md">
-                    E-Commerce</h2>
-                <div class="relative w-auto h-64">
-                    <!-- Image -->
-                    <img class="h-[256px] w-[455.33px] rounded-md object-cover projectImages"
-                        src="https://cdn.shopify.com/s/files/1/0070/7032/files/best-web-design-3.png?v=1691010811" alt="ecommerce website">
-                    <!-- Transparent Overlay -->
-                    <div class="absolute inset-0 bg-slate-400/50 transparentFront flex justify-center items-center">
-                        <!-- SVG Button -->
-                        <a href="https://cdn.shopify.com/s/files/1/0070/7032/files/best-web-design-3.png?v=1691010811" target="_blank">
-                            <svg class="opacity-0 fill-current text-white hover:opacity-100 transition-opacity duration-300"
-                                width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z" />
-                            </svg>
-                        </a>
                     </div>
+                    <p class="h-[256px] w-[455.33px] text-justify font-semibold">A portfolio website is an online platform
+                        showcasing a professional's or creative's work, skills, and achievements. It
+                        serves as a visual representation of their expertise, making it easy for potential employers,
+                        clients, or collaborators
+                        to assess their capabilities. A well-designed portfolio website can be a powerful tool for
+                        establishing credibility,
+                        generating leads, and setting oneself apart from others in the industry. With a portfolio website,
+                        professionals can
+                        display their projects, share their story, and demonstrate their value to a global audience.</p>
                 </div>
-                <p class="h-[256px] w-[455.33px] text-justify font-semibold">
-                    An ecommerce website is an online store that allows customers to browse and purchase products or services over the
-                    internet. It typically features a user-friendly interface, product catalogs, payment processing, and order management
-                    systems. Ecommerce websites can be stand-alone or integrated with existing brick-and-mortar stores, offering a seamless
-                    shopping experience for customers. They often utilize search engine optimization (SEO), social media, and email
-                    marketing to drive traffic and sales.
-                </p>
+
+                <div
+                    class="flex flex-col items-center p-8 bg-slate-400 dark:bg-slate-600 gap-5 rounded-lg shadow-md shadow-gray-600 dark:shadow-slate-400">
+                    <h2
+                        class="text-4xl font-extrabold uppercase text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500 drop-shadow-md">
+                        E-Commerce</h2>
+                    <div class="relative w-auto h-64">
+                        <!-- Image -->
+                        <img class="h-[256px] w-[455.33px] rounded-md object-cover projectImages"
+                            src="https://cdn.shopify.com/s/files/1/0070/7032/files/best-web-design-3.png?v=1691010811"
+                            alt="ecommerce website">
+                        <!-- Transparent Overlay -->
+                        <div class="absolute inset-0 bg-slate-400/50 transparentFront flex justify-center items-center">
+                            <!-- SVG Button -->
+                            <a href="https://cdn.shopify.com/s/files/1/0070/7032/files/best-web-design-3.png?v=1691010811"
+                                target="_blank">
+                                <svg class="opacity-0 fill-current text-white hover:opacity-100 transition-opacity duration-300"
+                                    width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="h-[256px] w-[455.33px] text-justify font-semibold">
+                        An ecommerce website is an online store that allows customers to browse and purchase products or
+                        services over the
+                        internet. It typically features a user-friendly interface, product catalogs, payment processing, and
+                        order management
+                        systems. Ecommerce websites can be stand-alone or integrated with existing brick-and-mortar stores,
+                        offering a seamless
+                        shopping experience for customers. They often utilize search engine optimization (SEO), social
+                        media, and email
+                        marketing to drive traffic and sales.
+                    </p>
+                </div>
+                <div
+                    class="flex flex-col items-center p-8 bg-slate-400 dark:bg-slate-600 gap-5 rounded-lg shadow-md shadow-gray-600 dark:shadow-slate-400">
+                    <h2
+                        class="text-4xl font-extrabold uppercase text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500 drop-shadow-md">
+                        food delivery app</h2>
+                    <div class="relative w-auto h-64">
+                        <!-- Image -->
+                        <img class="h-[256px] w-[455.33px] rounded-md projectImages"
+                            src="https://i.pinimg.com/736x/b0/01/2f/b0012fe1b23aff57f2a05cab5eeb41a3.jpg"
+                            alt="food delivery app">
+                        <!-- Transparent Overlay -->
+                        <div class="absolute inset-0 bg-slate-400/50 transparentFront flex justify-center items-center">
+                            <!-- SVG Button -->
+                            <a href="https://i.pinimg.com/736x/b0/01/2f/b0012fe1b23aff57f2a05cab5eeb41a3.jpg"
+                                target="_blank">
+                                <svg class="opacity-0 fill-current text-white hover:opacity-100 transition-opacity duration-300"
+                                    width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="h-[256px] w-[455.33px] text-justify font-semibold">
+                        The convenience of modern technology! A food delivery app is a software application that connects
+                        users with local
+                        restaurants and food establishments, allowing them to order their favorite meals online or through a
+                        mobile device.
+                        These apps typically offer a wide range of features, including real-time order tracking, payment
+                        processing, and
+                        delivery confirmation. Users can browse menus, place orders, and track the status of their food as
+                        it's prepared and
+                        delivered. Popular food delivery apps include Uber Eats, Grubhub, DoorDash, and Postmates, among
+                        many others.
+                    </p>
+                </div>
+                <div
+                    class="flex flex-col items-center p-8 bg-slate-400 dark:bg-slate-600 gap-5 rounded-lg shadow-md shadow-gray-600 dark:shadow-slate-400">
+                    <h2
+                        class="text-4xl font-extrabold uppercase text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500 drop-shadow-md">
+                        social media app</h2>
+                    <div class="relative w-auto h-64">
+                        <!-- Image -->
+                        <img class="w-[455.33px] h-[256px] rounded-md  projectImages"
+                            src="https://mostaql.hsoubcdn.com/uploads/portfolios/1792451/637d19468b7bb/Desktopsocialwebsite-1.jpg"
+                            alt="social media app">
+                        <!-- Transparent Overlay -->
+                        <div class="absolute inset-0 bg-slate-400/50 transparentFront flex justify-center items-center">
+                            <!-- SVG Button -->
+                            <a href="https://mostaql.hsoubcdn.com/uploads/portfolios/1792451/637d19468b7bb/Desktopsocialwebsite-1.jpg"
+                                target="_blank">
+                                <svg class="opacity-0 fill-current text-white hover:opacity-100 transition-opacity duration-300"
+                                    width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="w-[455.33px] h-[256px] text-justify font-semibold">A social media app is a software
+                        application that enables users to create, share, and interact with content on the
+                        internet. These apps allow users to connect with friends, family, and like-minded individuals, share
+                        updates, photos,
+                        and videos, and join online communities. Some popular social media apps include Facebook, Twitter,
+                        Instagram, TikTok,
+                        and Snapchat. They offer a range of features, such as chat rooms, messaging, and multimedia sharing,
+                        to facilitate
+                        communication and social interaction. Many social media apps are available for download on mobile
+                        devices or accessed
+                        through web browsers.</p>
+                </div>
+                <div
+                    class="flex flex-col items-center p-8 bg-slate-400 dark:bg-slate-600 gap-5 rounded-lg shadow-md shadow-gray-600 dark:shadow-slate-400">
+                    <h2
+                        class="text-4xl font-extrabold uppercase text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500 drop-shadow-md">
+                        chat messaging app</h2>
+                    <div class="relative w-auto h-64">
+                        <!-- Image -->
+                        <img class="w-[455.33px] h-[256px] rounded-md projectImages"
+                            src="https://www.messagesfordesktop.com/images/screenshots/fullscreen/mac-fullscreen.png"
+                            alt="chat messaging app">
+                        <!-- Transparent Overlay -->
+                        <div class="absolute inset-0 bg-slate-400/50 transparentFront flex justify-center items-center">
+                            <!-- SVG Button -->
+                            <a href="https://www.messagesfordesktop.com/images/screenshots/fullscreen/mac-fullscreen.png"
+                                target="_blank">
+                                <svg class="opacity-0 fill-current text-white hover:opacity-100 transition-opacity duration-300"
+                                    width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="w-[455.33px] h-[256px] text-justify font-semibold">A chat messaging app! Also known as instant
+                        messaging apps, they allow users to send and receive text messages, make
+                        voice and video calls, and share media files with friends, family, and colleagues in real-time.
+                        Popular examples include
+                        WhatsApp, Facebook Messenger, and Slack. These apps have revolutionized the way we communicate,
+                        making it faster and
+                        more convenient. Many chat messaging apps also offer group chat features, file sharing, and
+                        end-to-end encryption for
+                        secure messaging. Overall, chat messaging apps have become an essential tool for staying connected
+                        and communicating
+                        with others.</p>
+                </div>
+                <div
+                    class="flex flex-col items-center p-8 bg-slate-400 dark:bg-slate-600 gap-5 rounded-lg shadow-md shadow-gray-600 dark:shadow-slate-400">
+                    <h2
+                        class="text-4xl font-extrabold uppercase text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500 drop-shadow-md">
+                        project management</h2>
+                    <div class="relative w-auto h-64">
+                        <!-- Image -->
+                        <img class="w-[455.33px] h-[256px] rounded-md object-cover projectImages"
+                            src="https://cdn.dribbble.com/users/551602/screenshots/10071908/project_management_application_-_dribbble_4x.png"
+                            alt="project management app">
+                        <!-- Transparent Overlay -->
+                        <div class="absolute inset-0 bg-slate-400/50 transparentFront flex justify-center items-center">
+                            <!-- SVG Button -->
+                            <a href="https://cdn.dribbble.com/users/551602/screenshots/10071908/project_management_application_-_dribbble_4x.png"
+                                target="_blank">
+                                <svg class="opacity-0 fill-current text-white hover:opacity-100 transition-opacity duration-300"
+                                    width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="w-[455.33px] h-[256px] text-justify font-semibold">A project management app is a software tool
+                        designed to help teams and individuals plan, organize, and track their
+                        projects from start to finish. These apps typically offer features such as task assignment, timeline
+                        management,
+                        budgeting, and collaboration tools to facilitate communication among team members. Some popular
+                        project management apps
+                        include Trello, Asana, Basecamp, and Jira. They can be used by individuals, small businesses, and
+                        large enterprises to
+                        streamline workflow, improve productivity, and achieve project goals efficiently.</p>
+                </div>
             </div>
-            <div class="flex flex-col items-center p-8 bg-slate-400 dark:bg-slate-600 gap-5 rounded-lg shadow-md shadow-gray-600 dark:shadow-slate-400">
-                <h2
-                    class="text-4xl font-extrabold uppercase text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500 drop-shadow-md">
-                    food delivery app</h2>
-                <div class="relative w-auto h-64">
-                    <!-- Image -->
-                    <img class="h-[256px] w-[455.33px] rounded-md projectImages"
-                        src="https://i.pinimg.com/736x/b0/01/2f/b0012fe1b23aff57f2a05cab5eeb41a3.jpg" alt="food delivery app">
-                    <!-- Transparent Overlay -->
-                    <div class="absolute inset-0 bg-slate-400/50 transparentFront flex justify-center items-center">
-                        <!-- SVG Button -->
-                        <a href="https://i.pinimg.com/736x/b0/01/2f/b0012fe1b23aff57f2a05cab5eeb41a3.jpg" target="_blank">
-                            <svg class="opacity-0 fill-current text-white hover:opacity-100 transition-opacity duration-300"
-                                width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z" />
-                            </svg>
-                        </a>
+        </section>
+    <!-- projects end -->
+
+    <!-- contact start -->
+
+    <section id="contact" class="py-16 bg-gray-100 dark:bg-gray-800">
+        <div class="container mx-auto px-8 lg:px-32">
+            <h2 class="text-4xl font-bold text-center text-gray-800 dark:text-white mb-8">Contact Me</h2>
+    
+            <div class="bg-white dark:bg-gray-700 shadow-lg rounded-lg p-8 md:p-16">
+                <form id="contact-form" class="space-y-8">
+                    <div>
+                        <label for="name" class="block text-lg font-semibold text-gray-700 dark:text-gray-300">Name</label>
+                        <input type="text" id="name" name="name"
+                            class="w-full px-4 py-2 mt-2 text-gray-700 bg-gray-200 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-600 dark:text-gray-200 dark:focus:ring-blue-400"
+                            required>
                     </div>
-                </div>
-                <p class="h-[256px] w-[455.33px] text-justify font-semibold">
-                    The convenience of modern technology! A food delivery app is a software application that connects users with local
-                    restaurants and food establishments, allowing them to order their favorite meals online or through a mobile device.
-                    These apps typically offer a wide range of features, including real-time order tracking, payment processing, and
-                    delivery confirmation. Users can browse menus, place orders, and track the status of their food as it's prepared and
-                    delivered. Popular food delivery apps include Uber Eats, Grubhub, DoorDash, and Postmates, among many others.
-                </p>
-            </div>
-            <div class="flex flex-col items-center p-8 bg-slate-400 dark:bg-slate-600 gap-5 rounded-lg shadow-md shadow-gray-600 dark:shadow-slate-400">
-                <h2
-                    class="text-4xl font-extrabold uppercase text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500 drop-shadow-md">
-                    social media app</h2>
-                <div class="relative w-auto h-64">
-                    <!-- Image -->
-                    <img class="w-[455.33px] h-[256px] rounded-md  projectImages"
-                        src="https://mostaql.hsoubcdn.com/uploads/portfolios/1792451/637d19468b7bb/Desktopsocialwebsite-1.jpg" alt="social media app">
-                    <!-- Transparent Overlay -->
-                    <div class="absolute inset-0 bg-slate-400/50 transparentFront flex justify-center items-center">
-                        <!-- SVG Button -->
-                        <a href="https://mostaql.hsoubcdn.com/uploads/portfolios/1792451/637d19468b7bb/Desktopsocialwebsite-1.jpg" target="_blank">
-                            <svg class="opacity-0 fill-current text-white hover:opacity-100 transition-opacity duration-300"
-                                width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z" />
-                            </svg>
-                        </a>
+    
+                    <div>
+                        <label for="email"
+                            class="block text-lg font-semibold text-gray-700 dark:text-gray-300">Email</label>
+                        <input type="email" id="email" name="email"
+                            class="w-full px-4 py-2 mt-2 text-gray-700 bg-gray-200 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-600 dark:text-gray-200 dark:focus:ring-blue-400"
+                            required>
                     </div>
-                </div>
-                <p class="w-[455.33px] h-[256px] text-justify font-semibold">A social media app is a software application that enables users to create, share, and interact with content on the
-                internet. These apps allow users to connect with friends, family, and like-minded individuals, share updates, photos,
-                and videos, and join online communities. Some popular social media apps include Facebook, Twitter, Instagram, TikTok,
-                and Snapchat. They offer a range of features, such as chat rooms, messaging, and multimedia sharing, to facilitate
-                communication and social interaction. Many social media apps are available for download on mobile devices or accessed
-                through web browsers.</p>
-            </div>
-            <div class="flex flex-col items-center p-8 bg-slate-400 dark:bg-slate-600 gap-5 rounded-lg shadow-md shadow-gray-600 dark:shadow-slate-400">
-                <h2
-                    class="text-4xl font-extrabold uppercase text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500 drop-shadow-md">
-                    chat messaging app</h2>
-                <div class="relative w-auto h-64">
-                    <!-- Image -->
-                    <img class="w-[455.33px] h-[256px] rounded-md projectImages"
-                        src="https://www.messagesfordesktop.com/images/screenshots/fullscreen/mac-fullscreen.png" alt="chat messaging app">
-                    <!-- Transparent Overlay -->
-                    <div class="absolute inset-0 bg-slate-400/50 transparentFront flex justify-center items-center">
-                        <!-- SVG Button -->
-                        <a href="https://www.messagesfordesktop.com/images/screenshots/fullscreen/mac-fullscreen.png" target="_blank">
-                            <svg class="opacity-0 fill-current text-white hover:opacity-100 transition-opacity duration-300"
-                                width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z" />
-                            </svg>
-                        </a>
+    
+                    <div>
+                        <label for="message"
+                            class="block text-lg font-semibold text-gray-700 dark:text-gray-300">Message</label>
+                        <textarea id="message" name="message" rows="6"
+                            class="w-full px-4 py-2 mt-2 text-gray-700 bg-gray-200 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-600 dark:text-gray-200 dark:focus:ring-blue-400"
+                            required></textarea>
                     </div>
-                </div>
-                <p class="w-[455.33px] h-[256px] text-justify font-semibold">A chat messaging app! Also known as instant messaging apps, they allow users to send and receive text messages, make
-                voice and video calls, and share media files with friends, family, and colleagues in real-time. Popular examples include
-                WhatsApp, Facebook Messenger, and Slack. These apps have revolutionized the way we communicate, making it faster and
-                more convenient. Many chat messaging apps also offer group chat features, file sharing, and end-to-end encryption for
-                secure messaging. Overall, chat messaging apps have become an essential tool for staying connected and communicating
-                with others.</p>
-            </div>
-            <div class="flex flex-col items-center p-8 bg-slate-400 dark:bg-slate-600 gap-5 rounded-lg shadow-md shadow-gray-600 dark:shadow-slate-400">
-                <h2
-                    class="text-4xl font-extrabold uppercase text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500 drop-shadow-md">
-                    project management</h2>
-                <div class="relative w-auto h-64">
-                    <!-- Image -->
-                    <img class="w-[455.33px] h-[256px] rounded-md object-cover projectImages"
-                        src="https://cdn.dribbble.com/users/551602/screenshots/10071908/project_management_application_-_dribbble_4x.png" alt="project management app">
-                    <!-- Transparent Overlay -->
-                    <div class="absolute inset-0 bg-slate-400/50 transparentFront flex justify-center items-center">
-                        <!-- SVG Button -->
-                        <a href="https://cdn.dribbble.com/users/551602/screenshots/10071908/project_management_application_-_dribbble_4x.png" target="_blank">
-                            <svg class="opacity-0 fill-current text-white hover:opacity-100 transition-opacity duration-300"
-                                width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z" />
-                            </svg>
-                        </a>
+    
+                    <div class="text-center">
+                        <button type="submit" id="submit-btn"
+                            class="px-6 py-3 bg-blue-500 text-white rounded-lg font-semibold hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-700">Submit</button>
                     </div>
-                </div>
-                <p class="w-[455.33px] h-[256px] text-justify font-semibold">A project management app is a software tool designed to help teams and individuals plan, organize, and track their
-                projects from start to finish. These apps typically offer features such as task assignment, timeline management,
-                budgeting, and collaboration tools to facilitate communication among team members. Some popular project management apps
-                include Trello, Asana, Basecamp, and Jira. They can be used by individuals, small businesses, and large enterprises to
-                streamline workflow, improve productivity, and achieve project goals efficiently.</p>
+                </form>
+    
+                <!-- Blank div where the response message will be displayed -->
+                <div id="response-message" class="mt-8 text-center text-lg text-gray-800 dark:text-white"></div>
             </div>
         </div>
     </section>
-    <!-- projects end -->
+
+
+    <!-- contact end -->
 
     <!-- footer start -->
     <footer class="bg-gray-800 text-gray-400 py-6">
@@ -494,7 +624,8 @@
             <p>&copy; 2024 Soumik Sinha. All Rights Reserved.</p>
             <p class="mt-2">
                 Built with ❤️ using
-                <a href="https://tailwindcss.com/" target="_blank" class="text-blue-500 hover:underline">Tailwind CSS</a>.
+                <a href="https://tailwindcss.com/" target="_blank" class="text-blue-500 hover:underline">Tailwind
+                    CSS</a>.
             </p>
             <div class="flex justify-center mt-4 space-x-6">
                 <!-- Call button -->
@@ -504,7 +635,7 @@
                             d="M22 16.92v3.18a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-2.68 19.51 19.51 0 0 1-6-6A19.8 19.8 0 0 1 2 4.18 2 2 0 0 1 4 2h3.28a2 2 0 0 1 2 1.72 12.67 12.67 0 0 0 .7 2.79 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.29-1.29a2 2 0 0 1 2.11-.45 12.67 12.67 0 0 0 2.79.7A2 2 0 0 1 22 16.92z" />
                     </svg>
                 </a>
-    
+
                 <!-- GitHub button -->
                 <a href="https://github.com/your-github" target="_blank" class="hover:text-white">
                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -512,7 +643,7 @@
                             d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.599.111.793-.26.793-.577v-2.01c-3.338.726-4.042-1.416-4.042-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.838 1.239 1.838 1.239 1.07 1.834 2.809 1.304 3.495.996.108-.775.418-1.304.762-1.604-2.665-.305-5.466-1.333-5.466-5.931 0-1.31.469-2.38 1.236-3.221-.125-.304-.536-1.526.117-3.176 0 0 1.008-.322 3.301 1.23.958-.266 1.984-.399 3.005-.404 1.02.005 2.047.138 3.006.404 2.292-1.552 3.299-1.23 3.299-1.23.654 1.65.243 2.872.118 3.176.769.841 1.236 1.911 1.236 3.221 0 4.609-2.803 5.624-5.475 5.921.43.372.815 1.102.815 2.222v3.293c0 .319.192.694.8.576C20.566 21.795 24 17.299 24 12c0-6.627-5.373-12-12-12z" />
                     </svg>
                 </a>
-    
+
                 <!-- LinkedIn button -->
                 <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" class="hover:text-white">
                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -520,11 +651,12 @@
                             d="M19 0h-14c-2.762 0-5 2.238-5 5v14c0 2.762 2.238 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.762-2.238-5-5-5zm-11.266 19.985h-2.969v-9.985h2.969v9.985zm-1.484-11.392c-1.003 0-1.818-.815-1.818-1.818s.815-1.818 1.818-1.818c1.003 0 1.818.815 1.818 1.818s-.815 1.818-1.818 1.818zm13.25 11.392h-2.969v-4.896c0-1.171-.021-2.679-1.633-2.679-1.633 0-1.882 1.275-1.882 2.593v4.982h-2.969v-9.985h2.844v1.364h.041c.396-.747 1.364-1.534 2.805-1.534 2.995 0 3.549 1.971 3.549 4.538v5.617z" />
                     </svg>
                 </a>
-    
+
                 <!-- Mail button -->
                 <a href="mailto:your-email@example.com" class="hover:text-white">
                     <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 12.713l11.985-8.713H.015L12 12.713zm0 2.575L.015 7.287V18h23.97V7.287L12 15.288z" />
+                        <path
+                            d="M12 12.713l11.985-8.713H.015L12 12.713zm0 2.575L.015 7.287V18h23.97V7.287L12 15.288z" />
                     </svg>
                 </a>
             </div>
@@ -536,7 +668,8 @@
     <!-- Content Here -->
 
     <script src="script.js">
-       
+
     </script>
 </body>
+
 </html>

@@ -1,36 +1,41 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
- @import url("https://fonts.googleapis.com/css?family=Coiny");
-@media only screen and (max-width: 600px) {
-    
-
+html {
+    scroll-behavior: smooth;
 }
- /* Custom Animation for Welcome Page */
- @keyframes fadeOut {
-     from {
-         opacity: 1;
-     }
 
-     to {
-         opacity: 0;
-     }
- }
+@import url("https://fonts.googleapis.com/css?family=Coiny");
+@media only screen and (max-width: 600px) {}
 
- .fade-out {
-     animation: fadeOut 2s forwards;
- }
+/* Custom Animation for Welcome Page */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
 
-.container{
-    width:90%;
- }
- .widthOne{
-    width:40%
- }
- .widthTwo{
-    width:60%
- }
+    to {
+        opacity: 0;
+    }
+}
+
+.fade-out {
+    animation: fadeOut 2s forwards;
+}
+
+.container {
+    width: 90%;
+}
+
+.widthOne {
+    width: 40%
+}
+
+.widthTwo {
+    width: 60%
+}
+
 .headerTitle {
 
     text-transform: uppercase;
@@ -113,137 +118,178 @@
 
 
 .homeAnimation {
-     display: inline-block;
-     overflow: hidden;
-     white-space: nowrap;
-     /* color: rgb(232, 232, 232); */
- }
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    /* color: rgb(232, 232, 232); */
+}
 
- .homeAnimation:first-of-type {
-     /* For increasing performance 
+.homeAnimation:first-of-type {
+    /* For increasing performance 
                        ID/Class should've been used. 
                        For a small demo 
                        it's okaish for now */
-     animation: showup 15s infinite;
-     animation-delay: 2.5s;
- }
-
- .homeAnimation:last-of-type {
-     width: 0px;
-     animation: reveal 15s infinite;
+    animation: showup 15s infinite;
     animation-delay: 2.5s;
- }
+}
 
- .homeAnimation:last-of-type span {
-     margin-left: -355px;
-     animation: slidein 15s ;
- }
- .box-shadow{
+.homeAnimation:last-of-type {
+    width: 0px;
+    animation: reveal 15s infinite;
+    animation-delay: 2.5s;
+}
+
+.homeAnimation:last-of-type span {
+    margin-left: -355px;
+    animation: slidein 15s;
+}
+
+.box-shadow {
     box-shadow: 2px 2px 5px black;
- }
+}
 
- @keyframes showup {
-     0% {
-         opacity: 0;
-     }
+/* header related start  */
+.header-button {
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
 
-     20% {
-         opacity: 1;
-     }
+.header-button:hover {
+    transform: scale(1.05);
+    /* Slightly enlarges the button when hovered */
+}
 
-     80% {
-         opacity: 1;
-     }
+.header-button:active {
+    transform: scale(0.95);
+    /* Slightly shrinks the button when clicked */
+}
+/* header related end */
 
-     100% {
-         opacity: 0;
-     }
- }
 
- @keyframes slidein {
-     0% {
-         margin-left: -800px;
-     }
 
-     20% {
-         margin-left: -800px;
-     }
+/* navigation transition section start */
 
-     35% {
-         margin-left: 0px;
-     }
+/* Initial state: hidden and translated */
+#about,#projects,#skills,#contact {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
 
-     100% {
-         margin-left: 0px;
-     }
- }
+/* Active state: fully visible and in the original position */
+#about,#projects,#skills,#contact.active {
+    opacity: 1;
+    transform: translateY(0);
+}
 
- @keyframes reveal {
-     0% {
-         opacity: 0;
-         width: 0px;
-     }
+/* navigation transition section end */
 
-     20% {
-         opacity: 1;
-         width: 0px;
-     }
 
-     30% {
-         width: 400px;
-     }
+@keyframes showup {
+    0% {
+        opacity: 0;
+    }
 
-     80% {
-         opacity: 1;
-     }
+    20% {
+        opacity: 1;
+    }
 
-     100% {
-         opacity: 0;
-         width: 400px;
-     }
- }
+    80% {
+        opacity: 1;
+    }
 
- .typewriter{
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: -800px;
+    }
+
+    20% {
+        margin-left: -800px;
+    }
+
+    35% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        width: 0px;
+    }
+
+    20% {
+        opacity: 1;
+        width: 0px;
+    }
+
+    30% {
+        width: 400px;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        width: 400px;
+    }
+}
+
+.typewriter {
     overflow: hidden;
-        /* Ensures the content is not revealed until the animation */
-        border-right: .15em solid orange;
-        /* The typwriter cursor */
-        white-space: nowrap;
-        /* Keeps the content on a single line */
-        margin: 0 auto;
-        /* Gives that scrolling effect as the typing happens */
-        letter-spacing: .15em;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
     animation:
-            typing 2s steps(25, end),
-            blink-caret .75s step-end infinite;
- }
- @keyframes typing {
-     from {
-         width: 0
-     }
+        typing 2s steps(25, end),
+        blink-caret .75s step-end infinite;
+}
 
-     to {
-         width: 60%
-     }
- }
+@keyframes typing {
+    from {
+        width: 0
+    }
 
- /* The typewriter cursor effect */
- @keyframes blink-caret {
+    to {
+        width: 60%
+    }
+}
 
-     from,
-     to {
-         border-color: transparent
-     }
+/* The typewriter cursor effect */
+@keyframes blink-caret {
 
-     50% {
-         border-color: orange;
-     }
- }
- .iconHover:hover{
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
+.iconHover:hover {
     transform: perspective(300px) translateZ(50px);
- }
+}
+
 /* ABOUT ME SECTION */
 @import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
 .one h1 {
     text-align: center;
     text-transform: uppercase;
@@ -256,8 +302,8 @@
     text-shadow: 2px 2px 5px gray;
 }
 
-@media (max-width:1024px){
-    .aboutMe{
+@media (max-width:1024px) {
+    .aboutMe {
         display: flex;
         flex-direction: column;
     }
@@ -302,5 +348,3 @@
 .relative:hover .transparentFront {
     opacity: 1;
 }
-
-

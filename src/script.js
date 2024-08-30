@@ -111,8 +111,75 @@ function onScroll() {
 window.addEventListener('scroll', onScroll);
 
 
+//contact start
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from refreshing the page
+
+    // Hide the form
+    document.getElementById('contact-form').style.display = 'none';
+
+    // Display the thank you message in the blank div
+    const responseDiv = document.getElementById('response-message');
+    responseDiv.textContent = "Thank you for contacting me. I'll get in touch with you soon.";
+});
+
+// contact end
 
 
+// navigations
+document.addEventListener('DOMContentLoaded', function () {
+    const aboutSection = document.getElementById('about');
 
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                aboutSection.classList.add('active');
+            }
+        });
+    });
 
+    observer.observe(aboutSection);
+});
 
+document.addEventListener('DOMContentLoaded', function () {
+    const aboutSection = document.getElementById('projects');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                aboutSection.classList.add('active');
+            }
+        });
+    });
+
+    observer.observe(aboutSection);
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const aboutSection = document.getElementById('contact');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                aboutSection.classList.add('active');
+            }
+        });
+    });
+
+    observer.observe(aboutSection);
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const aboutSection = document.getElementById('skills');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                aboutSection.classList.add('active');
+            }
+        });
+    });
+
+    observer.observe(aboutSection);
+});
