@@ -348,3 +348,38 @@ html {
 .relative:hover .transparentFront {
     opacity: 1;
 }
+
+
+
+.certificateTransition{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transition: all ease-in-out 0.1s;
+}
+
+.certificateTransition:hover{
+    bottom: 15px;
+    left: 0;
+    transform: perspective(4000px) translateZ(40px);
+}
+
+@media (max-width:1387px){
+    body{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+    }
+}
+
+@media (max-width:1068px) {
+   nav{
+    display: none;
+   }
+}
+/* @media (max-width:1650px) {
+   .homeSection{
+    display: flex;
+    flex-direction: column;
+   }
+} */

@@ -128,6 +128,21 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 
 
 // navigations
+
+document.addEventListener('DOMContentLoaded', function () {
+    const aboutSection = document.getElementById('home');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                aboutSection.classList.add('active');
+            }
+        });
+    });
+
+    observer.observe(aboutSection);
+});
+
 document.addEventListener('DOMContentLoaded', function () {
     const aboutSection = document.getElementById('about');
 
@@ -172,6 +187,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('DOMContentLoaded', function () {
     const aboutSection = document.getElementById('skills');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                aboutSection.classList.add('active');
+            }
+        });
+    });
+
+    observer.observe(aboutSection);
+});
+document.addEventListener('DOMContentLoaded', function () {
+    const aboutSection = document.getElementById('certifications');
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
